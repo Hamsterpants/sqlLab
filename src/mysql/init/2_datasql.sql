@@ -1,0 +1,7 @@
+USE game_db;
+
+INSERT INTO Users (ID, FirstName, LastName, InGameName, Email, PasswordSalt, PasswordHash, CreatedDate, LastOnline, IsActive) VALUES (1, 'John', 'Doe', 'JohnnyD', 'john.doe@example.com', 'a1b2c3d4e5f6', 'hashedpassword1', '2023-05-01 10:00:00', '2023-05-10 15:30:00', 1), (2, 'Jane', 'Smith', 'JaneS', 'jane.smith@example.com', 'g7h8i9j0k1l2', 'hashedpassword2', '2023-05-02 11:30:00', '2023-05-09 18:45:00', 1), (3, 'Mike', 'Johnson', 'MikeJ', 'mike.johnson@example.com', 'm3n4o5p6q7r8', 'hashedpassword3', '2023-05-03 14:15:00', '2023-05-08 20:00:00', 1), (4, 'Emily', 'Brown', 'EmilyB', 'emily.brown@example.com', 's9t0u1v2w3x4', 'hashedpassword4', '2023-05-04 16:45:00', '2023-05-07 22:30:00', 1), (5, 'David', 'Wilson', 'DavidW', 'david.wilson@example.com', 'y5z6a7b8c9d0', 'hashedpassword5', '2023-05-05 09:20:00', '2023-05-06 12:10:00', 1);
+
+INSERT INTO Maps (ID, Name, CreatedDate, LastModified, IsActive) VALUES (1, 'Map1', '2023-05-01 12:00:00', '2023-05-05 16:30:00', 1), (2, 'Map2', '2023-05-02 15:45:00', '2023-05-06 10:15:00', 1), (3, 'Map3', '2023-05-03 18:20:00', '2023-05-07 14:00:00', 1), (4, 'Map4', '2023-05-04 09:10:00', '2023-05-08 11:45:00', 1), (5, 'Map5', '2023-05-05 13:30:00', '2023-05-09 17:20:00', 1);
+
+INSERT INTO HiScores (ID, Map, User, Time) VALUES (1, 1, 1, '00:05:30'), (2, 1, 2, '00:06:15'), (3, 2, 3, '00:04:45'), (4, 2, 4, '00:05:10'), (5, 3, 5, '00:07:00'), (6, 3, 1, '00:06:30'), (7, 4, 2, '00:04:20'), (8, 4, 3, '00:04:55'), (9, 5, 4, '00:06:40'), (10, 5, 5, '00:05:50');

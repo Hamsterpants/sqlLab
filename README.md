@@ -7,7 +7,7 @@ docker build -t sqllab .
 
 Run image
 ```bash
-docker run -it --rm --name sqllab -p 8080:80 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123 sqllab
+docker run -it --rm --name sqllab -p 8080:80 -p 3306:3306 sqllab
 ```
 
 Start Bash shell inside container 
